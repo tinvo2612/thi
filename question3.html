@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sotietkiem</title>
+  </head>
+  <style>
+    #myForm {
+      display: none;
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+    }
+      #result {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      background-color: #e9f7ef;
+    }
+  </style>
+  <body>
+    <button onclick="moso()">Mở sổ tiết kiệm</button>
+    <div id="myForm">
+      <h1>SỔ TIẾT KIỆM</h1>
+      <form>
+        <hr />
+        <li>
+          <label>Mã sổ: </label>
+          <input type="text" maxlength="5" placeholder="5 kí tự" />
+        </li>
+        <br />
+        <li>
+          <label for="tk">Loại tiết kiệm: </label>
+          <input type="text" maxlength="10" placeholder="10 kí tự" />
+        </li>
+        <br />
+        <li>
+          <label>Họ tên khách hàng: </label>
+          <input type="text" maxlength="30" placeholder="30 kí tự" />
+        </li>
+        <br />
+        <li>
+          <label>Chứng minh nhân dân: </label>
+          <input type="number" placeholder="Số" />
+        </li>
+        <br />
+        <li><label>Ngày mở sổ: </label> <input type="date" /></li>
+        <br />
+        <li>
+          <label>Số tiền gửi: </label> <input type="number" placeholder="Số" />
+        </li>
+        <button type="submit">Gửi</button>
+        <button type="reset">Reset</button>
+      </form>
+    </div>
+    <script>
+      function moso() {
+        let form = document.getElementById("myForm");
+        if (form.style.display === "none" || form.style.display === "") {
+          form.style.display = "block";
+        }
+      }
+
+    </script>
+  </body>
+</html>
